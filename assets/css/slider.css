@@ -6,6 +6,10 @@
     display: none
 }
 
+.main-slides img{
+    width:100%;
+}
+
 img {
     vertical-align: middle;
 }
