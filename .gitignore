@@ -1,2 +1,10 @@
 .idea/
-var/
+node_modules/*
+/var/*
+!/var/log/
+/var/log/*
+!/var/log/.gitkeep
+
+/pub/css/styles.min.css
+/pub/images/*
+!/pub/images/.gitkeep

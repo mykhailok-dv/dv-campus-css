@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+}
+.main-slides {
+  display: none;
+}
+.main-slides img {
+  width: 100%;
+}
+img {
+  vertical-align: middle;
+}
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  color: #f36b47;
+}
+.slide-info {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.slide-info-item {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  margin: 5px;
+}
+.slide-info-item p {
+  font-size: 1.125rem;
+  color: #eff7f8;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 32px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  opacity: 0.5;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.active {
+  background-color: #111111;
+}
+/* Fading animation */
+.slide-fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next {
+    font-size: 11px;
+  }
+}
+body {
+  margin: 0;
+}
+.primary-color,
+.fas {
+  color: #f36b47;
+}
+.second-color {
+  color: #4c4c4c;
+}
+.mobile-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.mobile-menu i {
+  transform: scale(1, 0.65);
+  padding: 1.5rem;
+  font-size: 3rem;
+}
+.site-name {
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
+}
+.note-info {
+  background-color: #f36b47;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  width: 100%;
+  padding: 1.5rem;
+}
+.note-info p {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.note-info .note {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.common-info {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+section {
+  text-align: center;
+}
+h2 {
+  font-size: 26px;
+  border-bottom: 0.125rem solid #f36b47;
+  font-weight: 500;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.description-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #9d9c9c;
+}
+.image-wrapper {
+  display: inline-block;
+  height: 164px;
+  overflow: hidden;
+  position: relative;
+}
+.image-wrapper .crop {
+  width: 100%;
+  height: 100%;
+}
+.main-border-bottom {
+  border-bottom: 0.5rem solid #f36b47;
+}
+.about-us-section {
+  padding: 3rem;
+}
+.about-us-section .item {
+  text-align: center;
+  padding: 1rem 0;
+}
+.item i {
+  font-size: 1.875rem;
+  color: #f36b47;
+}
+.item .title {
+  margin-top: 0.5rem;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.5rem;
+}
+.item .description {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.125rem;
+  color: #9d9c9c;
+  line-height: 1rem;
+}
+.projects-section {
+  margin: 5rem 3.5rem;
+}
+.projects-section .description-text {
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+.project-item {
+  width: 250px;
+  text-align: center;
+  display: inline-block;
+  background-color: #DADADA;
+  margin: 1.875rem 0;
+}
+@media screen and (min-width: 550px) {
+  .project-item {
+    margin: 1.875rem;
+  }
+}
+.project-item .info {
+  font-family: "Ubuntu", sans-serif;
+}
+.project-item .title {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 500;
+  color: #fe5c32;
+  border-bottom: 1px solid #505050;
+  margin: 0 1rem;
+}
+.project-item .description {
+  font-size: 1.125rem;
+  color: #605f5f;
+}
+.talk-to-us-section {
+  background-color: #7a7a7a;
+  padding: 4rem 2rem;
+}
+.talk-to-us-section .title {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 3.75rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.talk-to-us-section .description {
+  font-family: 'PT Sans', sans-serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.contact-us-info-section {
+  padding: 4rem 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+.contact-us-info-section .title {
+  display: block;
+}
+.contact-us-info-section .title * {
+  font-size: 3rem;
+  color: #484848;
+}
+.contact-us-info-section .description {
+  margin: 3rem 1rem;
+}
+.contact-us-info-section .description * {
+  font-size: 1.5rem;
+  color: #9d9c9c;
+}
+.maps-section img {
+  max-width: 100%;
+}
+.contact-section {
+  padding: 0 1rem 0 2rem;
+}
+.contact-section .details {
+  padding: 4.5rem 0;
+}
+.contact-section .details .title {
+  display: inline-block;
+}
+.contact-section .title {
+  margin-bottom: 3rem;
+}
+.contact-section .title h2 {
+  font-size: 3rem;
+  border: 0;
+  color: #484848;
+  font-weight: 500;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+.contact-section .title hr {
+  width: 80%;
+  text-align: center;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #f36b47;
+}
+.contact-items,
+.contact-items .item {
+  text-align: left;
+  margin: 2rem 1rem;
+}
+.contact-items .item {
+  display: flex;
+  align-items: center;
+}
+.contact-items .item i {
+  font-size: 1.875rem;
+  min-width: 2rem;
+  margin-right: 2.5rem;
+}
+.contact-items .item span {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.875rem;
+  line-height: 1;
+  color: #9d9c9c;
+  word-break: break-word;
+}
+.contact-us-form .field {
+  margin: 0.5rem 0;
+}
+.contact-us-form input,
+.contact-us-form textarea {
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #9d9c9c;
+  padding: 0.875rem;
+  background-color: #f0f0f0;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+}
+.contact-us-form button {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.25rem;
+  color: #ffffff;
+  background-color: #f36b47;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  border: 0;
+  border-radius: 4px;
+  min-width: 320px;
+  width: 80%;
+  max-width: 25rem;
+}
+.copyright {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color: #f36b47;
+  padding: 1rem;
+  color: white;
+}
