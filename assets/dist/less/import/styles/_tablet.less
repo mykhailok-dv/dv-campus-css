@@ -1,0 +1,179 @@
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .mobile-menu {
+    i {
+      display: none;
+    }
+
+    nav.main-menu {
+      display: flex;
+      align-items: center;
+      margin: auto 1.5*@base-size;
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin: auto .75*@base-size;
+      }
+
+      a {
+        font-family: @first-font;
+        font-size: .875*@base-size;
+        font-weight: 500;
+        color: @text-color-dark;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      .current {
+        border-bottom: 2px solid @primary-color;
+        background: @white;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          background: @primary-color;
+          bottom: -5px;
+          width: 4px;
+          height: 4px;
+          transform: rotate(45deg);
+          left: 0;
+          right: 0;
+          margin: auto
+        }
+      }
+    }
+  }
+
+  .site-name {
+    text-align: left;
+    margin: 1.5*@base-size 2.75*@base-size;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 2.25*@base-font-size;
+    }
+  }
+
+  .info-section {
+    .note-info {
+      font-size: 1.25*@base-font-size;
+      padding-left: 5.5*@base-size;
+
+      .note {
+        font-size: 1.5*@base-font-size;
+      }
+    }
+
+    .common-info {
+      margin-left: 4*@base-size;
+      margin-right: 4*@base-size;
+    }
+  }
+
+  .info-section, .about-us-section {
+    border: none;
+  }
+
+  .about-us-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .item {
+      width: 50%;
+      padding-left: 2.5*@base-size;
+      padding-right: 2.5*@base-size;;
+    }
+  }
+
+  .projects-section {
+    margin: 3.5*@base-size;
+
+    h2 {
+      font-size: 1.875*@base-font-size;
+    }
+
+    .description-text {
+      font-size: @base-font-size;
+      padding: 0 2*@base-size;
+    }
+
+    .projects-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .project-item {
+      max-width: 15.625*@base-size;
+      margin-left: 2*@base-size;
+      margin-right: 2*@base-size;
+    }
+  }
+
+  .talk-to-us-section {
+    .description {
+      font-size: @base-font-size;
+    }
+  }
+
+  .contact-us-info-section {
+    padding-bottom: 2*@base-size;
+
+    .title {
+      h2 {
+        font-size: 1.875*@base-font-size;
+      }
+    }
+
+    .description {
+      margin: 0 5.5*@base-size;
+      span {
+        font-size: @base-font-size;
+      }
+    }
+  }
+
+  .maps-section {
+    margin: 0 5.5*@base-size;
+  }
+
+  .contact-section {
+    margin: 0 5.5*@base-size;
+
+    h2 {
+      font-size: 1.875*@base-font-size;
+    }
+
+    .contact-items {
+      margin-top: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap-reverse;
+      .item {
+        margin: @base-size;
+        text-align: center;
+        span,i {
+          font-size: @base-font-size;
+        }
+
+        i {
+          margin-right: @base-size;
+        }
+      }
+    }
+  }
+}

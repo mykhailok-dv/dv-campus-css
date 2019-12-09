@@ -7,4 +7,4 @@ node_modules/*
 
 /pub/css/styles.min.css
 /pub/images/*
-!/pub/images/.gitkeep
+!/pub/images/.gitkeepgit
